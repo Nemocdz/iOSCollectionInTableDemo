@@ -24,7 +24,6 @@
     self.tableview.dataSource = self;
     self.tableview.estimatedRowHeight = 100.f;
     self.tableview.rowHeight = UITableViewAutomaticDimension;
-    [self.tableview registerNib:[UINib nibWithNibName:@"CDZTableViewCell" bundle:nil] forCellReuseIdentifier:@"TableViewCell"];
 }
 
 
@@ -32,12 +31,19 @@
     return 3;
 }
 
-- (void)shouldReload{
+- (void)didChangeCell:(UITableViewCell *)cell{
     [self.tableview reloadData];
+    NSIndexPath *indexPath = [self.tableview indexPathForCell:cell];
+    [self.tableview scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionNone animated:NO];
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    CDZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell" forIndexPath:indexPath];
+    NSString *identifer = [NSString stringWithFormat:@"CDZTableViewCell%ld",indexPath.row];
+    CDZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifer];
+    if (!cell) {
+        cell  = [CDZTableViewCell.alloc initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifer];
+    }
     cell.delegate = self;
     return cell;
 }

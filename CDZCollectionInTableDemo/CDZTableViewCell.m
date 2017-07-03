@@ -9,11 +9,10 @@
 #import "CDZTableViewCell.h"
 #import "CDZCollectionViewCell.h"
 #import "CDZCollectionViewItem.h"
-@interface CDZTableViewCell()<UICollectionViewDelegate,UICollectionViewDataSource,CDZCollectionCellDelegate>
-@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *collectionViewHeightLayout;
-@property (strong, nonatomic) IBOutlet UICollectionViewFlowLayout *collectionViewFlowLayout;
+#import <Masonry/Masonry.h>
 
+@interface CDZTableViewCell()<UICollectionViewDelegate,UICollectionViewDataSource,CDZCollectionCellDelegate>
+@property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) NSMutableArray<CDZCollectionViewItem *>*itemsArray;
 
 
@@ -25,17 +24,27 @@
     [self setup];
 }
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        [self setup];
+    }
+    return self;
+}
+
 - (void)setup {
     CDZCollectionViewItem *item = [CDZCollectionViewItem new];
     item.delBtnHidden = YES;
     _itemsArray = [NSMutableArray arrayWithObject:item];
-    self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
+
    // self.collectionViewFlowLayout.estimatedItemSize = CGSizeMake(125, 100);
    // self.collectionViewFlowLayout.itemSize = UICollectionViewFlowLayoutAutomaticSize;
     
-    [self.collectionView registerNib:[UINib nibWithNibName:@"CDZCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CollectionViewCell"];
-    [self reloadCell];
+    [self.contentView addSubview:self.collectionView];
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.with.bottom.with.left.with.right.mas_equalTo(self.contentView);
+        make.height.mas_equalTo(@100);
+    }];
+
 }
 
 
@@ -47,9 +56,10 @@
 
 - (void)reloadCell{
     [self.collectionView reloadData];
-    self.collectionViewHeightLayout.constant = self.collectionViewFlowLayout.collectionViewContentSize.height;
-    [self updateConstraintsIfNeeded];
-    [self.delegate shouldReload];
+    [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(@(self.collectionView.collectionViewLayout.collectionViewContentSize.height));
+    }];
+    [self.delegate didChangeCell:self];
 }
 
 
@@ -76,6 +86,22 @@
     cell.delegate = self;
     cell.item = self.itemsArray[indexPath.row];
     return cell;
+}
+
+- (UICollectionView *)collectionView{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout.alloc init];
+        layout.itemSize = CGSizeMake(125, 100);
+        layout.minimumLineSpacing = 0;
+        layout.minimumInteritemSpacing = 0;
+        layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        _collectionView = [UICollectionView.alloc initWithFrame:CGRectZero collectionViewLayout:layout];
+        _collectionView.backgroundColor = [UIColor clearColor];
+        [_collectionView registerNib:[UINib nibWithNibName:@"CDZCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CollectionViewCell"];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+    }
+    return _collectionView;
 }
 
 @end

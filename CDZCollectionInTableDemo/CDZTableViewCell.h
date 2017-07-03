@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol CDZTableViewCellDelegate<NSObject>
-
-@optional
-- (void)shouldReload;
+- (void)didChangeCell:(UITableViewCell *)cell;
 @end
 
 @interface CDZTableViewCell : UITableViewCell

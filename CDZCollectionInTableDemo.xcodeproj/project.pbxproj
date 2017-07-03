@@ -7,30 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BF8BFA9E6290A41A7E7EEA0 /* libPods-CDZCollectionInTableDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57F599D95DE428DF13E45F /* libPods-CDZCollectionInTableDemo.a */; };
+		DA003F4D1F09F9D80032D7C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA003F4B1F09F9D80032D7C8 /* Main.storyboard */; };
 		DA9AC8421E33E2AB000E8075 /* CDZCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC83E1E33E2AB000E8075 /* CDZCollectionViewCell.m */; };
 		DA9AC8431E33E2AB000E8075 /* CDZCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC83F1E33E2AB000E8075 /* CDZCollectionViewItem.m */; };
 		DA9AC8441E33E2AB000E8075 /* CDZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC8401E33E2AB000E8075 /* CDZTableViewCell.m */; };
 		DA9AC8451E33E2AB000E8075 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC8411E33E2AB000E8075 /* ViewController.m */; };
 		DA9AC8471E33E2C6000E8075 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC8461E33E2C6000E8075 /* AppDelegate.m */; };
 		DA9AC84A1E33E2FC000E8075 /* CDZCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9AC8481E33E2FC000E8075 /* CDZCollectionViewCell.xib */; };
-		DA9AC84B1E33E2FC000E8075 /* CDZTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9AC8491E33E2FC000E8075 /* CDZTableViewCell.xib */; };
 		DA9AC84D1E33E333000E8075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9AC84C1E33E333000E8075 /* Assets.xcassets */; };
-		DA9AC8501E33E34A000E8075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9AC84E1E33E34A000E8075 /* Main.storyboard */; };
 		DA9AC8521E33E39F000E8075 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9AC8511E33E39F000E8075 /* Info.plist */; };
 		DAEFB8941E332431002BAC8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB8931E332431002BAC8D /* main.m */; };
 		DAEFB8A21E332431002BAC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAEFB8A01E332431002BAC8D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A57F599D95DE428DF13E45F /* libPods-CDZCollectionInTableDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDZCollectionInTableDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		201F43FFFAE365D9B0076C6A /* Pods-CDZCollectionInTableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDZCollectionInTableDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDZCollectionInTableDemo/Pods-CDZCollectionInTableDemo.release.xcconfig"; sourceTree = "<group>"; };
+		92FE814FFD229237BC610CE9 /* Pods-CDZCollectionInTableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDZCollectionInTableDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDZCollectionInTableDemo/Pods-CDZCollectionInTableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DA003F4C1F09F9D80032D7C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CDZCollectionInTableDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		DA9AC83E1E33E2AB000E8075 /* CDZCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDZCollectionViewCell.m; path = CDZCollectionInTableDemo/CDZCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
 		DA9AC83F1E33E2AB000E8075 /* CDZCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDZCollectionViewItem.m; path = CDZCollectionInTableDemo/CDZCollectionViewItem.m; sourceTree = SOURCE_ROOT; };
 		DA9AC8401E33E2AB000E8075 /* CDZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDZTableViewCell.m; path = CDZCollectionInTableDemo/CDZTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		DA9AC8411E33E2AB000E8075 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = CDZCollectionInTableDemo/ViewController.m; sourceTree = SOURCE_ROOT; };
 		DA9AC8461E33E2C6000E8075 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CDZCollectionInTableDemo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		DA9AC8481E33E2FC000E8075 /* CDZCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CDZCollectionViewCell.xib; path = CDZCollectionInTableDemo/CDZCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
-		DA9AC8491E33E2FC000E8075 /* CDZTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CDZTableViewCell.xib; path = CDZCollectionInTableDemo/CDZTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		DA9AC84C1E33E333000E8075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CDZCollectionInTableDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		DA9AC84F1E33E34A000E8075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CDZCollectionInTableDemo/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA9AC8511E33E39F000E8075 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CDZCollectionInTableDemo/Info.plist; sourceTree = SOURCE_ROOT; };
 		DAEFB88F1E332431002BAC8D /* CDZCollectionInTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDZCollectionInTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEFB8931E332431002BAC8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../CDZCollectionInTableDemo/main.m; sourceTree = "<group>"; };
@@ -47,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF8BFA9E6290A41A7E7EEA0 /* libPods-CDZCollectionInTableDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FFF111BF95AE56D4A9A2406 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92FE814FFD229237BC610CE9 /* Pods-CDZCollectionInTableDemo.debug.xcconfig */,
+				201F43FFFAE365D9B0076C6A /* Pods-CDZCollectionInTableDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABBFFEAF192D36FB70628261 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A57F599D95DE428DF13E45F /* libPods-CDZCollectionInTableDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DAEFB8861E332430002BAC8D = {
 			isa = PBXGroup;
 			children = (
 				DAEFB8911E332431002BAC8D /* CDZCollectionInTableDemo */,
 				DAEFB8901E332431002BAC8D /* Products */,
+				6FFF111BF95AE56D4A9A2406 /* Pods */,
+				ABBFFEAF192D36FB70628261 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,12 +94,11 @@
 		DAEFB8911E332431002BAC8D /* CDZCollectionInTableDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DA9AC84E1E33E34A000E8075 /* Main.storyboard */,
+				DA003F4B1F09F9D80032D7C8 /* Main.storyboard */,
 				DAEFB8981E332431002BAC8D /* ViewController.h */,
 				DA9AC8411E33E2AB000E8075 /* ViewController.m */,
 				DAEFB8AF1E333171002BAC8D /* CDZTableViewCell.h */,
 				DA9AC8401E33E2AB000E8075 /* CDZTableViewCell.m */,
-				DA9AC8491E33E2FC000E8075 /* CDZTableViewCell.xib */,
 				DAEFB8B41E3331D9002BAC8D /* CDZCollectionViewCell.h */,
 				DA9AC83E1E33E2AB000E8075 /* CDZCollectionViewCell.m */,
 				DA9AC8481E33E2FC000E8075 /* CDZCollectionViewCell.xib */,
@@ -109,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAEFB8A61E332431002BAC8D /* Build configuration list for PBXNativeTarget "CDZCollectionInTableDemo" */;
 			buildPhases = (
+				FE534489B8F075E1D4AECA62 /* [CP] Check Pods Manifest.lock */,
 				DAEFB88B1E332430002BAC8D /* Sources */,
 				DAEFB88C1E332430002BAC8D /* Frameworks */,
 				DAEFB88D1E332430002BAC8D /* Resources */,
+				0D90B2439E31ABCFEAA4CCAF /* [CP] Embed Pods Frameworks */,
+				D6C4F8274C6B2ED1413A80EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,13 +187,60 @@
 				DAEFB8A21E332431002BAC8D /* LaunchScreen.storyboard in Resources */,
 				DA9AC84A1E33E2FC000E8075 /* CDZCollectionViewCell.xib in Resources */,
 				DA9AC8521E33E39F000E8075 /* Info.plist in Resources */,
-				DA9AC8501E33E34A000E8075 /* Main.storyboard in Resources */,
+				DA003F4D1F09F9D80032D7C8 /* Main.storyboard in Resources */,
 				DA9AC84D1E33E333000E8075 /* Assets.xcassets in Resources */,
-				DA9AC84B1E33E2FC000E8075 /* CDZTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D90B2439E31ABCFEAA4CCAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDZCollectionInTableDemo/Pods-CDZCollectionInTableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6C4F8274C6B2ED1413A80EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDZCollectionInTableDemo/Pods-CDZCollectionInTableDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE534489B8F075E1D4AECA62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAEFB88B1E332430002BAC8D /* Sources */ = {
@@ -188,13 +259,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA9AC84E1E33E34A000E8075 /* Main.storyboard */ = {
+		DA003F4B1F09F9D80032D7C8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DA9AC84F1E33E34A000E8075 /* Base */,
+				DA003F4C1F09F9D80032D7C8 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		DAEFB8A01E332431002BAC8D /* LaunchScreen.storyboard */ = {
@@ -299,6 +369,7 @@
 		};
 		DAEFB8A71E332431002BAC8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92FE814FFD229237BC610CE9 /* Pods-CDZCollectionInTableDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/CDZCollectionInTableDemo/Info.plist";
@@ -310,6 +381,7 @@
 		};
 		DAEFB8A81E332431002BAC8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201F43FFFAE365D9B0076C6A /* Pods-CDZCollectionInTableDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/CDZCollectionInTableDemo/Info.plist";

@@ -1,0 +1,5 @@
+target 'CDZCollectionInTableDemo' do
+  pod 'Masonry'
+end
+
+
