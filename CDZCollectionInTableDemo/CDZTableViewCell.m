@@ -14,15 +14,8 @@
 @interface CDZTableViewCell()<UICollectionViewDelegate,UICollectionViewDataSource,CDZCollectionCellDelegate>
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) NSMutableArray<CDZCollectionViewItem *>*itemsArray;
-
-
 @end
 @implementation CDZTableViewCell
-
-- (void)awakeFromNib{
-    [super awakeFromNib];
-    [self setup];
-}
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
