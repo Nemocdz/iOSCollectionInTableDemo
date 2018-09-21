@@ -35,7 +35,7 @@
     [self.contentView addSubview:self.collectionView];
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.with.bottom.with.left.with.right.mas_equalTo(self.contentView);
-        make.height.mas_equalTo(@100);
+        make.height.mas_equalTo(@100).priorityLow();
     }];
 
 }
@@ -50,7 +50,7 @@
 - (void)reloadCell{
     [self.collectionView reloadData];
     [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo(@(self.collectionView.collectionViewLayout.collectionViewContentSize.height));
+        make.height.equalTo(@(self.collectionView.collectionViewLayout.collectionViewContentSize.height)).priorityHigh();
     }];
     [self.delegate didChangeCell:self];
 }
